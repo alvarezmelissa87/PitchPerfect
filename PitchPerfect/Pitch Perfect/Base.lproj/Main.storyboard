@@ -25,15 +25,6 @@
                                     <action selector="recordAudio:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="GMA-Pj-cE0"/>
                                 </connections>
                             </button>
-                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Recording" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tNa-gj-ey2">
-                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
-                                <fontDescription key="fontDescription" name="STHeitiTC-Light" family="Heiti TC" pointSize="14"/>
-                                <color key="textColor" red="0.21960785984992981" green="0.078431375324726105" blue="0.32156863808631897" alpha="1" colorSpace="deviceRGB"/>
-                                <nil key="highlightedColor"/>
-                                <variation key="widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="165" y="358" width="71" height="14"/>
-                                </variation>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yUJ-ml-AVB">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <state key="normal" image="Stop">
@@ -44,53 +35,50 @@
                                     <segue destination="GGJ-gd-nC6" kind="show" id="jHR-Ud-zWT"/>
                                 </connections>
                             </button>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Recording" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tNa-gj-ey2">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" name="STHeitiTC-Light" family="Heiti TC" pointSize="14"/>
+                                <color key="textColor" red="0.21960785984992981" green="0.078431375324726105" blue="0.32156863808631897" alpha="1" colorSpace="deviceRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="centerX" secondItem="yUJ-ml-AVB" secondAttribute="centerX" id="3P1-uq-Sbe"/>
-                            <constraint firstAttribute="centerX" secondItem="tNa-gj-ey2" secondAttribute="centerX" id="7w1-i4-SwM"/>
+                            <constraint firstItem="tNa-gj-ey2" firstAttribute="top" secondItem="yj5-xg-Wv6" secondAttribute="bottom" constant="8" id="5SA-qx-y1b"/>
                             <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="yUJ-ml-AVB" secondAttribute="bottom" constant="42" id="8MQ-fo-xbI"/>
                             <constraint firstAttribute="centerX" secondItem="yUJ-ml-AVB" secondAttribute="centerX" id="8WU-d5-RJf"/>
-                            <constraint firstAttribute="centerY" secondItem="yj5-xg-Wv6" secondAttribute="centerY" id="JZD-s2-fHk"/>
-                            <constraint firstAttribute="centerX" secondItem="yj5-xg-Wv6" secondAttribute="centerX" id="PDK-tg-ww3"/>
-                            <constraint firstAttribute="centerX" secondItem="tNa-gj-ey2" secondAttribute="centerX" id="WVN-qI-43A"/>
-                            <constraint firstAttribute="centerY" secondItem="tNa-gj-ey2" secondAttribute="centerY" id="hzT-72-UGS"/>
-                            <constraint firstAttribute="centerY" secondItem="tNa-gj-ey2" secondAttribute="centerY" constant="-65" id="rj8-wT-ADZ"/>
+                            <constraint firstAttribute="centerY" secondItem="yj5-xg-Wv6" secondAttribute="centerY" id="A0l-Nc-lp5"/>
+                            <constraint firstAttribute="centerX" secondItem="yj5-xg-Wv6" secondAttribute="centerX" id="Aaj-Go-qWl"/>
+                            <constraint firstAttribute="centerX" secondItem="tNa-gj-ey2" secondAttribute="centerX" constant="-0.5" id="qfs-K1-I9z"/>
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="yj5-xg-Wv6"/>
-                                <exclude reference="tNa-gj-ey2"/>
                                 <exclude reference="yUJ-ml-AVB"/>
+                                <exclude reference="tNa-gj-ey2"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="8MQ-fo-xbI"/>
-                                <exclude reference="7w1-i4-SwM"/>
-                                <exclude reference="WVN-qI-43A"/>
-                                <exclude reference="hzT-72-UGS"/>
-                                <exclude reference="rj8-wT-ADZ"/>
-                                <exclude reference="3P1-uq-Sbe"/>
+                                <exclude reference="A0l-Nc-lp5"/>
+                                <exclude reference="Aaj-Go-qWl"/>
+                                <exclude reference="5SA-qx-y1b"/>
+                                <exclude reference="qfs-K1-I9z"/>
                                 <exclude reference="8WU-d5-RJf"/>
-                                <exclude reference="JZD-s2-fHk"/>
-                                <exclude reference="PDK-tg-ww3"/>
+                                <exclude reference="8MQ-fo-xbI"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
                                 <include reference="yj5-xg-Wv6"/>
-                                <include reference="tNa-gj-ey2"/>
                                 <include reference="yUJ-ml-AVB"/>
+                                <include reference="tNa-gj-ey2"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="8MQ-fo-xbI"/>
-                                <include reference="7w1-i4-SwM"/>
-                                <include reference="WVN-qI-43A"/>
-                                <include reference="hzT-72-UGS"/>
-                                <include reference="rj8-wT-ADZ"/>
-                                <include reference="3P1-uq-Sbe"/>
+                                <include reference="A0l-Nc-lp5"/>
+                                <include reference="Aaj-Go-qWl"/>
+                                <include reference="5SA-qx-y1b"/>
+                                <include reference="qfs-K1-I9z"/>
                                 <include reference="8WU-d5-RJf"/>
-                                <include reference="JZD-s2-fHk"/>
-                                <include reference="PDK-tg-ww3"/>
+                                <include reference="8MQ-fo-xbI"/>
                             </mask>
                         </variation>
                     </view>
@@ -123,10 +111,10 @@
             </objects>
             <point key="canvasLocation" x="552" y="389"/>
         </scene>
-        <!--View Controller-->
+        <!--Play Sounds View Controller-->
         <scene sceneID="8DX-3T-0H6">
             <objects>
-                <viewController id="GGJ-gd-nC6" sceneMemberID="viewController">
+                <viewController id="GGJ-gd-nC6" customClass="PlaySoundsViewController" customModule="Pitch_Perfect" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="yKC-OR-fef"/>
                         <viewControllerLayoutGuide type="bottom" id="NEm-Pf-nWK"/>
